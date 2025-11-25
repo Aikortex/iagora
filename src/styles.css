@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(0,0,0);
-    background-image: url(https://techalliance.com.br/avatar/livia.png);
+    background-image: url(https://techalliance.com.br/avatar/iagora.png);
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição */
@@ -21,8 +21,8 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000000cc;
-    backdrop-filter: blur(1px);
+    /*background-color: #000000cc;
+    backdrop-filter: blur(1px);*/
     z-index: -1; /* Coloca atrás do conteúdo */
 }
 .container {
@@ -31,21 +31,28 @@ body::before {
     padding: 30px 20px;
     text-align: center;
     color: #fff;
+    height: 90vh;
+}
+
+.titulos{
+    height: 10% !important;
 }
 
 h1 {
     font-size: 26px;
     margin-bottom: -15px;
+        color: #333;
 }
 h2 {
     font-size: 19px;
     margin-bottom: 20px;
+        color: #333;
     font-weight: 300;
 }
 
 .avatar_image {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -54,8 +61,11 @@ h2 {
 }
 
 .avatar_container {
-    margin-bottom: 20px;
     position: relative;
+    height: 45% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Efeito de ondas pulsando atrás do avatar */
@@ -64,8 +74,8 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     background-color: rgba(0, 200, 81, 0.6);
     border-radius: 50%;
     animation: pulse-blur 1.7s ease-in-out alternate infinite;
